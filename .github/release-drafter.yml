@@ -1,0 +1,26 @@
+# Configuration for Release Drafter: https://github.com/toolmantim/release-drafter
+name-template: '$NEXT_MINOR_VERSION 🌈🌈'
+tag-template: '$NEXT_MINOR_VERSION'
+categories:
+  - title: '🚀 Features'
+    labels:
+      - feature
+  - title: '🐛 Bug Fixes'
+    labels:
+      - bug
+  - title: '🧰 Maintenance'
+    labels:
+      - dependencies
+  - title: '♻️ Refactor'
+    labels:
+      - refactor
+  - title: '📚️ Documentation'
+    labels:
+      - documentation
+change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
+branches:
+  - master
+template: |
+  ## What's Changed
+
+  $CHANGES

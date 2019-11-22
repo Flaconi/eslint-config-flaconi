@@ -1,0 +1,45 @@
+{
+  "name": "eslint-config-flaconi",
+  "version": "1.0.0-beta",
+  "description": "shared eslint config",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaconi/eslint-config-flaconi.git"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "2.10.0",
+    "@typescript-eslint/parser": "2.10.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.7.2",
+    "eslint-config-prettier": "6.4.0",
+    "eslint-config-react-app": "5.0.2",
+    "eslint-config-standard": "14.1.0",
+    "eslint-plugin-flowtype": "3.13.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-node": "10.0.0",
+    "eslint-plugin-prettier": "3.1.1",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-react": "7.17.0",
+    "eslint-plugin-react-hooks": "1.7.0",
+    "eslint-plugin-standard": "4.0.1",
+    "prettier": "1.19.1",
+    "stylelint": "12.0.0"
+  },
+  "keywords": [
+    "flaconi",
+    "eslint",
+    "eslintconfig",
+    "config"
+  ],
+  "author": "Stavros Liaskos <stavros.liaskos@flaconi.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/flaconi/eslint-config-flaconi/issues"
+  },
+  "homepage": "https://github.com/flaconi/eslint-config-flaconi#readme"
+}
