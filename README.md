@@ -32,7 +32,7 @@ Add the following to your `.eslintrc`
 ```json
 {
     "extends": [
-        "eslint-config-flaconi"
+        "flaconi"
     ]
 }
 ```
@@ -68,7 +68,7 @@ Developing or testing locally the repo is possible using the `yarn link` command
 ```json
 {
     "extends": [
-        "eslint-config-flaconi"
+        "flaconi"
     ]
 }
 ```
