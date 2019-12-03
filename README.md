@@ -9,23 +9,13 @@
 
 
 ## Install
-#### 1. Install the package:
 ```
-yarn add -D eslint-config-flaconi
+yarn add -D babel-eslint@10.0.3 eslint-config-flaconi eslint@6.7.2 eslint-config-prettier@6.4.0 eslint-config-react-app@5.0.2 eslint-config-standard@14.1.0 eslint-plugin-flowtype@3.13.0 eslint-plugin-import@2.18.2 eslint-plugin-jsx-a11y@6.2.3 eslint-plugin-node@10.0.0 eslint-plugin-prettier@3.1.1 eslint-plugin-promise@4.2.1 eslint-plugin-react@7.17.0 eslint-plugin-react-hooks@1.7.0 eslint-plugin-standard@4.0.1 prettier@1.19.1 stylelint@12.0.0 
 ```
 or
 ```
-npm i -D eslint-config-flaconi
+npm i -D babel-eslint@10.0.3 eslint-config-flaconi eslint@6.7.2 eslint-config-prettier@6.4.0 eslint-config-react-app@5.0.2 eslint-config-standard@14.1.0 eslint-plugin-flowtype@3.13.0 eslint-plugin-import@2.18.2 eslint-plugin-jsx-a11y@6.2.3 eslint-plugin-node@10.0.0 eslint-plugin-prettier@3.1.1 eslint-plugin-promise@4.2.1 eslint-plugin-react@7.17.0 eslint-plugin-react-hooks@1.7.0 eslint-plugin-standard@4.0.1 prettier@1.19.1 stylelint@12.0.0
 ```
-
-#### 2. Install the correct versions of each package, which are listed by the command:
-
-```sh
-npx install-peerdeps --dev eslint-config-flaconi
-```
-If using **yarn**, you can also use the shortcut described above, as the command will detect that you are using yarn and will act accordingly.
-Otherwise, run `npm info "eslint-config-flaconi@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency.
-
 
 ## Usage
 Add the following to your `.eslintrc`
@@ -40,7 +30,7 @@ Add the following to your `.eslintrc`
 
 ## Contains
 Our default export contains all of our ESLint rules, including ECMAScript 6+ and React. It requires: 
-* `@typescript-eslint/eslint-plugin`
+* `@typescript-eslint/eslint-plugin` 
 * `@typescript-eslint/parser`
 * `babel-eslint`
 * `eslint`
@@ -61,10 +51,12 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ and
 
 ## Develop
 Developing or testing locally the repo is possible using the `yarn link` command.
-1. clone the repo
-2. `yarn link` and copy the output command
-3. go to any project, paste the command and run it
-4. your `.eslintrc` file must look like this:
+1. `git clone https://github.com/Flaconi/eslint-config-flaconi.git && cd eslint-config-flaconi`
+2. `yarn link`
+3. `cd` to any project and run `yarn link "eslint-config-flaconi"`
+4. Install all plugins (except `eslint-config-flaconi`)   
+`yarn add -D babel-eslint@10.0.3 eslint@6.7.2 eslint-config-prettier@6.4.0 eslint-config-react-app@5.0.2 eslint-config-standard@14.1.0 eslint-plugin-flowtype@3.13.0 eslint-plugin-import@2.18.2 eslint-plugin-jsx-a11y@6.2.3 eslint-plugin-node@10.0.0 eslint-plugin-prettier@3.1.1 eslint-plugin-promise@4.2.1 eslint-plugin-react@7.17.0 eslint-plugin-react-hooks@1.7.0 eslint-plugin-standard@4.0.1 prettier@1.19.1 stylelint@12.0.0`
+5. your `.eslintrc` file must look like this:
 ```json
 {
     "extends": [
